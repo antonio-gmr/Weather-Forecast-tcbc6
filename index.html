@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./Assets/style.css" />
+  <title>Weatherman</title>
+</head>
+
+
+
+<header id="header" class="header">
+  <h1>Weather Dashboard</h1>
+</header>
+
+<div class="row" id="date"></div>
+<div id="country" class="country"></div>
+<aside>
+  <h2 class="row">Search for a city:</h2>
+  <form id="form">
+    <input type="text" placeholder="Ex: Mexico city" id="search" class="row">
+  </form>
+  <div>
+    <button class="btn" id="search-button">Search</button>
+    <h2>or use </h2>
+
+    <button class="btn" id="show">Your location</button>
+    <div id="message"></div>
+
+  </div>
+  <div>
+    <ul class="LGH" id="cities">
+      Mostfamous cities
+      <button id="city1"> </button>
+      <button id="city2"> </button>
+      <button id="city3"> </button>
+      <button id="city4"> </button>
+      <button id="city5"> </button>
+      <button id="city6"> </button>
+      <button id="city7"> </button>
+      <button id="city8"> </button>
+
+
+      <h2 id="cityname">City name:</h2>
+      <img id="wicon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+      <div id="day">Today is:</div>
+      <div id="temp">Temperature:</div>
+      <div id="humidity">Humidity: </div>
+      <div id="wind">Windspeed: </div>
+
+    </ul>
+  </div>
+</aside>
+
+<body>
+  <main class="container" id="main">
+    <div class="future-forecast">
+
+
+
+      <div class="weather-forecast" id="5day">
+        <div class="weather-forecast-item">
+          <img id="wicon5" src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" class="wicon">
+          <div id="day5" class="day">1-Day:</div>
+          <div id="temp5" class="temp">Temperature:</div>
+          <div id="humidity5">Humidity: </div>
+          <div id="wind5">Windspeed: </div>
+        </div>
+
+        <div class="weather-forecast-item" id="5day">
+          <img id="wicon4" src="http://openweathermap.org/img/wn/11n@2x.png" alt="weather-icon" class="wicon">
+          <div id="day4" class="day">2-Day:</div>
+          <div id="temp4" class="temp">Temperature:</div>
+          <div id="humidity4">Humidity: </div>
+          <div id="wind4">Windspeed: </div>
+        </div>
+
+        <div class="weather-forecast-item" id="5day">
+          <img id="wicon3" src="http://openweathermap.org/img/wn/01d@2x.png" alt="weather-icon" class="wicon">
+          <div id="day3" class="day">3-Day:</div>
+          <div id="temp3" class="temp">Temperature:</div>
+          <div id="humidity3">Humidity: </div>
+          <div id="wind3">Windspeed: </div>
+        </div>
+        <div class="weather-forecast-item" id="5day">
+          <img id="wicon2" src="http://openweathermap.org/img/wn/02d@2x.png" alt="weather-icon" class="wicon">
+          <div id="day2" class="day">4-Day:</div>
+          <div id="temp2" class="temp">Temperature:</div>
+          <div id="humidity2">Humidity: </div>
+          <div id="wind2">Windspeed: </div>
+        </div>
+      </div>
+      <!--
+        <div class="weather-forecast-item" id="5day">
+          <img src="" alt="weather-icon" class="wicon">
+          <div id="day1" class="day">5-Day:</div>
+          <div id="temp1" class="temp">Temperature:</div>
+          <div id="humidity1">Humidity: </div>
+          <div id="wind1">Windspeed: </div>
+        </div>
+        <div class="weather">
+              <div>Temperature</div>
+              <div>${temperature}</div>
+            </div>
+            <div class="weather">
+              <div>Humidity</div>
+              <div>${humidity}%</div>
+            </div>
+            <div class="weather">
+              <div>Wind Speed</div>
+              <div>${wind_speed}</div>
+            </div>
+            <div class="weather">
+              <div>UV index</div>
+              <div>${UV_index}</div>
+            </div>
+            <img src="http://openweathermap.org/img/wn//${day.weather[0].icon}@4x.png" alt="weather-icon" class="wicon">
+            <div class="other">
+              <div class="day">${window.moment(day.dt * 1000).format('dddd')}</div>
+              <div class="temp">Night - ${day.temp.night}&#176;C</div>
+              <div class="temp">Day - ${day.temp.day}&#176;C</div>
+            </div>
+            <div class="5dayforecast-item">
+              <div class="day">${window.moment(day.dt * 1000).format('ddd')}</div>
+              <img src="http://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png" alt="weather-icon"
+                class="wicon">
+              <div class="temp">Night - ${day.temp.night}&#176;C</div>
+              <div class="temp">Day - ${day.temp.day}&#176;C</div>
+            </div>-->
+  </main>
+  <script src="./Assets/script.js"></script>
+</body>
+
+</html>
